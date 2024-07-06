@@ -1,0 +1,80 @@
+
+.card1{
+    width: 50%;
+    padding: 2rem 0;
+    margin: 3rem auto;
+}
+form{
+    margin: 0 auto;
+    width: 50%;
+    padding: 1.5rem 0;
+}
+.Token_details{
+    padding: 9em 0;
+    width: 35%;
+}
+.Token_details b{
+    font-size: 1.4rem;
+}
+.Token_details span{
+    font-size: 1.4rem;
+}
+.container{
+    display: flex;
+    width: 65%;
+    margin: 4em auto;
+    gap: 10%;
+    padding: 10em 0;
+}
+.p_token{
+    font-size: large;
+    font-weight: bold;
+    margin-top:60px;
+}
+.token{
+    width: 90%;
+    height:50px;
+    border-radius: 10px;
+}
+.pay{
+    text-decoration: none;
+    background: rgb(4, 81, 73);
+    padding: .625em 2.2em;
+    border-radius: 5px;
+    color: beige;
+}
+.pay:hover{
+    color: beige;
+    background: rgb(7, 113, 103);
+    transition: 0.5s;
+}
+.img_container{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    padding: .4em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+.img{
+    width: 30%;
+    margin: .5em;
+    border-radius: 1em;
+}
+@media (max-width:35rem){
+    .card1,
+    .img_container{
+        width: 90%;
+    }
+    form{
+        width: 90%;
+    }
+    .img{
+        width: 43%;
+    }
+    .pay{
+        font-size: .7rem;
+    }
+}
+

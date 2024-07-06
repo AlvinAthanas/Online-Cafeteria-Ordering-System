@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Password</title>
+    <style>
+        #passwordForm {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Profile</h1>
+    
+    <!-- Change Password Button -->
+    <button id="changePasswordBtn" onclick="togglePasswordForm()">Change Password</button>
+    
+    <!-- Password Change Form -->
+    <form id="passwordForm">
+        <h2>Change Password</h2>
+        <label for="currentPassword">Current Password:</label>
+        <input type="password" id="currentPassword" required><br>
+        
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" required><br>
+        
+        <button type="submit" onclick="changePassword()">Submit</button>
+    </form>
+    
+    <script>
+        let isPasswordFormVisible = false;
+
+        function togglePasswordForm() {
+            const passwordForm = document.getElementById('passwordForm');
+            if (isPasswordFormVisible) {
+                passwordForm.style.display = 'none';
+            } else {
+                passwordForm.style.display = 'block';
+            }
+            isPasswordFormVisible = !isPasswordFormVisible;
+        }
+
+        function changePassword() {
+            // Add your password change logic here
+            const currentPassword = document.getElementById('currentPassword').value;
+            const newPassword = document.getElementById('newPassword').value;
+            
+            // Example: You can make an API call to change the password on the server
+            // You should replace this with your actual password change code
+            // For this example, we'll just log the values
+            console.log('Current Password: ' + currentPassword);
+            console.log('New Password: ' + newPassword);
+            
+            // Reset the form and hide it
+            const passwordForm = document.getElementById('passwordForm');
+            passwordForm.reset();
+            passwordForm.style.display = 'none';
+            isPasswordFormVisible = false;
+        }
+    </script>
+</body>
+</html>

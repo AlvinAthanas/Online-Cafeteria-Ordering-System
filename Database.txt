@@ -1,0 +1,47 @@
+Database: cafeteria
+Tables:
+	user
+		user_id varchar(14) 
+		name varchar(25)
+		password varchar(25)
+		phone_no char(13)
+		title varchar(12)
+
+	transaction
+		transaction_id int(11)
+		user_id varchar(14) (FK)
+		type varchar(10)
+		amount int(10)
+		balance int(6)
+		date datetime
+
+	payment
+		payment_id int(11)
+		order_id int(11) (FK)
+		total int(5)
+		status varchar(10)
+		receipt int(11)
+		date datetime
+
+	ordered_meals
+		Meal_id int(11)
+		order_id int(11)
+		user_id varchar(14)
+
+	order
+		order_id int(11)
+		user_id varchar(14)
+		total int(5)
+		token int(5)
+		meals varchar(60)
+
+	meals
+		meal_id int(11)
+		price int(5)
+		name varchar(15)
+		available int(1)
+
+	admin
+		id int(11)
+		name varchar(20)
+		password varchar(20)

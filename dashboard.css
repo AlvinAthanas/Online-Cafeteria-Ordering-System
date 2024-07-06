@@ -1,0 +1,140 @@
+.heading {
+  font-size: larger;
+}
+
+.welcome {
+  color: rgb(4, 81, 73);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.pay_btn {
+  padding: 0.4375em 1em;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: beige;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgb(4, 81, 73);
+}
+.pay_btn:hover {
+  color: black;
+  background: rgb(4, 81, 73);
+  transition: 0.5s;
+}
+.c1 {
+  width: 32%;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.c2 {
+  background-image: url(cafeimage/payment.avif);
+}
+.c3 {
+  width: 32%;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.c4 {
+  background-image: url(cafeimage/profile.avif);
+}
+.prof {
+  justify-self: flex-end;
+}
+.c5 {
+  width: 32%;
+  border-radius: 8px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.c6 {
+  background-image: url(cafeimage/menu2.jpg);
+}
+.c1,
+.c3,
+.c5 {
+  height: 100%;
+  width: 100%;
+}
+
+.outer {
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+}
+.outer > * + * {
+  margin-left: 5em;
+}
+.inner {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+  height: 60%;
+  align-items: center;
+}
+.head {
+  width: 100%;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+.card {
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  display: flex;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* align-items: end; */
+  justify-content: end;
+  padding: 0.5em;
+}
+.btn {
+  height: 100%;
+  width: 33%;
+  transition-duration: 300ms;
+  transition-property: margin;
+  text-decoration: none;
+}
+.btn:hover {
+  margin: 0 0 2rem 0;
+}
+.card span {
+  color: rgb(227, 227, 224);
+  font-size: 2.5rem;
+}
+@media (max-width: 55rem) {
+  .inner {
+    flex-direction: column;
+    height: 75vh;
+  }
+  .card span {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 75%;
+    height: 33%;
+    transition-duration: 300ms;
+    transition-property: margin;
+    text-decoration: none;
+  }
+  .btn:hover{
+    margin: 0 0 0 2rem;
+  }
+  .head {
+    font-size: 1.2rem;
+  }
+  #heading {
+    font-size: large;
+  }
+  .head h1 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton">Click me</button>
+        <script>
+// Define a JavaScript variable
+var buttonText = "Initial Text";
+
+// Get a reference to the button element by its ID
+var buttonElement = document.getElementById("myButton");
+
+// Set the button's value (text) to the value of the JavaScript variable
+buttonElement.value = buttonText;
+
+// You can also use innerHTML or textContent to set the button's text
+// buttonElement.innerHTML = buttonText;
+// buttonElement.textContent = buttonText;
+
+// Later, you can update the variable and change the button text dynamically
+buttonText = "Updated Text";
+buttonElement.value = buttonText;
+
+        </script>
+</body>
+</html>

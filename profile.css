@@ -1,0 +1,35 @@
+.mti-3 {
+  background-color: rgb(212, 209, 209);
+  padding: 4em 0;
+  border-radius: 20px;
+  width: 700px;
+  margin: 4em auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+label {
+  display: inline-block;
+  width: 28%;
+  margin: 0.7em 0;
+}
+
+#passwordForm {
+  display: none;
+}
+@media (max-width: 780px) {
+  .mti-3 {
+    width: 94%;
+  }
+  form label,
+  .container p,
+  .container button {
+    font-size: 0.8rem;
+  }
+  form label {
+    width: 50%;
+  }
+}

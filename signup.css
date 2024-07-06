@@ -1,0 +1,48 @@
+.mti-3{
+    background-color:rgb(4, 81, 73) ;
+    padding:40px 100px;
+    margin: 4em auto;
+    border-radius:15px;
+    margin-bottom: 8em;
+}
+.title{
+    color: beige;
+}
+
+.payment_methods1{
+margin:40px;
+width:200px;
+height:150px;
+border-radius:10px;
+}
+.payment_methods2{
+margin:40px;
+width:200px;
+height:150px; 
+border-radius:10px;
+}
+.btn{
+    background-color:white;
+    color: black;
+}
+.btn:hover{
+    background-color: rgb(5, 133, 120);
+    color: aqua;
+}
+.mt-3 span{
+    color: aqua;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+@media (max-width:500px){
+    .mti-3{
+        width: 90%;
+        padding:2.5em 1.5em;
+    }
+    .mti-3 h2{
+        font-size: 1.5rem;
+    }
+    .mti-3 p{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,126 @@
+
+body{
+    background: rgb(217, 217, 217);
+
+}
+.hero {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+label, .menu_buttons{
+    font-size: 1.5rem;
+
+}
+.contain {
+    border: solid grey;
+    border-radius: 6px;
+    border-width: 3px;
+    /* padding: 10px 0px 70px 200px; */
+    text-align: center;
+    background-image: url('cafeimage/menu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    overflow-y: auto; 
+    width: 55%;
+    min-height: 1rem;
+    padding: 1em 0;
+}
+@media (max-width:840px){
+    .hero{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contain{
+        width: 95%;
+        /* margin-bottom: 2rem; */
+        margin: 2rem auto;
+    }
+    .menu_list{
+        font-size: .8rem;
+    }
+    #deduct,
+    #generate,
+    #price{
+        font-size: .8rem;
+    }
+    .main{
+        font-size: 1.45rem;
+    }
+    #contain-two{
+        width: 80%;
+        margin: 0 0 0 2rem;
+    }
+    
+}
+@media (max-width:1650px){
+    #generate{
+        margin: 0 0 .6em 0;
+    }
+    /* .hero{
+        margin: 0;
+    } */
+}
+.headings{
+    text-align: center;
+}
+.contain-two{
+    width: 40%;
+    
+    margin-bottom: 3em;
+}
+.body>*{
+    padding: 2em 0;
+}
+/* .body{
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+
+.price {
+    width: 4.75em;
+    height: 1.875em;
+    font-size: 1rem;
+}
+
+.price:hover {
+    background: green;
+    color: #fff;
+}
+
+.menu_list {
+    display: inline-block;
+    width: 180px;
+    color: beige;
+    /* Remove height property to allow for dynamic content */
+}
+
+.total {
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.token {
+    padding: 0.3125;
+    width: 12.5em;
+    font-size: 1.2rem;
+}
+
+.menu_buttons {
+    font-weight: 700;
+}
+.main {
+    color: beige;
+}
+
+
+
+
+
+

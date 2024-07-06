@@ -1,0 +1,7 @@
+.split{
+    display: flex;
+    flex-direction: row;
+}
+body{
+    padding: 100px;
+}

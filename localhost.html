@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+</head>
+<body>
+    <form>
+        <label for="password">Password:</label>
+        <input type="password" id="password" onkeyup="validatePassword(this.value)">
+        <p id="passwordMessage"></p>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validatePassword(password) {
+            var passwordMessage = document.getElementById("passwordMessage");
+            var validLength = password.length >= 8;
+            var hasLetter = /[a-zA-Z]/.test(password);
+            var hasDigit = /\d/.test(password);
+            var hasSpecialChar = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password);
+
+            if (validLength && hasLetter && hasDigit && hasSpecialChar) {
+                passwordMessage.textContent = "Password is valid!";
+            } else if (validLength && hasLetter && hasDigit) {
+                passwordMessage.textContent = "Your password should have at least one special character.";
+            } else if (validLength && hasLetter && hasSpecialChar) {
+                passwordMessage.textContent = "Your password should have at least one digit.";
+            } else if (validLength && hasDigit && hasSpecialChar) {
+                passwordMessage.textContent = "Your password should have at least one letter.";
+            } else {
+                passwordMessage.textContent = "Your password should have not less than 8 characters and should have at least one letter, one digit, and one special character.";
+            }
+        }
+    </script>
+</body>
+</html>

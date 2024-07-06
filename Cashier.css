@@ -1,0 +1,14 @@
+
+.main-table {
+        margin: 0 auto;
+    margin-bottom: 10rem;
+}
+th,
+td
+{
+    border: 1px solid grey;
+}
+form{
+    margin: 0 auto;
+}
+

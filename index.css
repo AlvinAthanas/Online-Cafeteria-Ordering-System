@@ -1,0 +1,35 @@
+.submission{
+    width: 180px;
+    height: 55px;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.submission:hover{
+    background: rgb(4, 81, 73);
+    color: #fff;
+}
+ form{
+    background: rgb(4, 81, 73);
+    padding: 150px 100px;
+    border-radius: 15px;
+ }
+ .next{
+    text-decoration: none;
+    padding: 10px 60px;
+    font-weight: 600;
+    font-size: x-large;
+    background: rgb(236, 235, 235);
+    color: #000;
+    
+}
+.next:hover{
+    background: rgb(4, 81, 73);
+    border: solid black;
+    border-width: 1px;
+}
+.body{
+    padding: 120px 120px 50px 120px;
+    background: rgb(217, 217, 217);
+    height: 100%;
+}

@@ -1,0 +1,27 @@
+.card{
+    width: 40%;
+    margin: 7em auto;
+    padding: 4em 0;
+}
+.container{
+    width: 80%;
+    margin-left: 2em;
+    margin: 0 auto;
+}
+@media (max-width:500px){
+    .card{
+        width: 90%;
+        margin: 2em auto;
+        padding: 2em 0;
+    }
+    .mb-5 span input{
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+    }
+    .row{
+        width: 95%;
+    }
+}
+

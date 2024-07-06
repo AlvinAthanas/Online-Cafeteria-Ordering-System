@@ -1,0 +1,17 @@
+.split{
+    display: flex;
+    flex-direction: row;
+}
+.one{
+    background: greenyellow;
+}
+.two{
+    background: red;
+}
+.three{
+    background: yellow;
+}
+header,
+section{
+    padding: 3rem 0;
+}

@@ -1,0 +1,78 @@
+.c2 {
+  background-image: url(cafeimage/cashier.avif);
+}
+.c4 {
+  background-image: url(cafeimage/cook.avif);
+}
+.c1,
+.c3 {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+.card {
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  background-repeat: no-repeat;
+  width: 100%;
+  align-items: end;
+  justify-content: end;
+  padding: 0.5em;
+}
+
+.inner {
+  margin: 8rem auto;
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  height: 36%;
+  align-items: center;
+}
+
+.head h1 {
+  color: rgb(4, 81, 73);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: center;
+}
+.outer {
+  height: 100vh;
+}
+.btn {
+  height: 100%;
+  width: 35%;
+  transition-duration: 300ms;
+  transition-property: margin-bottom;
+  text-decoration: none;
+}
+.btn:hover {
+  margin-bottom: 2rem;
+}
+.card span {
+  color: rgb(227, 227, 224);
+  font-size: 2.5rem;
+}
+@media (max-width: 55rem) {
+  .inner {
+    margin: 5em auto;
+    flex-direction: column;
+    width: 90%;
+    height: 70%;
+  }
+  .btn {
+    height: 45%;
+    width: 90%;
+    transition-duration: 300ms;
+    transition-property: margin;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .btn:hover{
+    margin: 0 0 0 2rem;
+  }
+  .card span {
+    font-size: 1.7rem;
+  }
+}

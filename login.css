@@ -1,0 +1,45 @@
+
+.mti-3{
+    background-color:rgb(4, 81, 73);
+    padding:20px 50px;
+    border-radius:20px; 
+    width:700px;
+    height: 300px;
+    margin: 5rem auto;
+}
+.btn{
+    background-color:white;
+    color: black;
+}
+.btn:hover{
+    background-color: rgb(5, 133, 120);
+    color: aqua;
+}
+.no_acc{
+    color: beige;
+
+}
+
+#no_acc{
+    text-decoration: none;
+    cursor: pointer;
+    color: bisque;
+   
+}
+#no_acc:hover{
+    color: aqua;
+    text-decoration:dotted;
+}
+
+@media (max-width:590px){
+    .container{
+        width: 90%;
+        padding: 1.7rem .5em .5em .5rem;
+    }
+    .form-floating{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+}
